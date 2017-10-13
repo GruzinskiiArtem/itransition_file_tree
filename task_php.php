@@ -10,7 +10,7 @@ showTree($parameterRestrictions);
 
 function showTree(string $parameterRestrictions): void {
     echo "File is located:".'"'.dirname(__FILE__).'"'.$parameterRestrictions;
-    echo "File tree:"."<br>";
+    echo "File tree:".$parameterRestrictions;
     $allFoldersNearby=showAllFoldersNearby(dirname(__FILE__));
     $fileFloor = 0;
     showAllFilesAndFolders($allFoldersNearby, dirname(__FILE__), $fileFloor, $parameterRestrictions);
