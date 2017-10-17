@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 $sapi = php_sapi_name();
 
-if ($sapi == 'cli'){
+if ($sapi == 'cli') {
     $parameterRestrictions = "\r\n";
 } else {
     $parameterRestrictions = "<br>";
